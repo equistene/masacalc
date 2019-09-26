@@ -1,0 +1,79 @@
+html{
+  margin: 0; padding: 0;
+  min-height: 100vh;
+}
+body{
+  font-size: 1rem;
+  font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
+  background: url(../img/bg.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; 
+}
+
+main{
+  max-width: 60%;
+  display: table;
+  margin: 0 auto;
+  section.top{
+    padding: 50px;
+    h1{
+      color: #FFF;
+      margin: 0;
+      padding: 0;
+      font-size: 3rem;
+      line-height: 1;
+      text-align: center;
+      span{
+        display: block;
+        font-size: 70%;
+        text-transform: uppercase;
+      }
+    }
+  }
+  #formDough{
+    color: #FFF;
+    form{
+      background: rgba(0, 0, 0, 0.2);
+      padding: 40px 20px;
+      border-radius: 4px; 
+      text-align:center;
+      label{
+        display: block;
+        font-size: 1.25rem;
+      }
+      input{
+        display: block;
+        border: 1px solid #EFEFEF;
+        background: #FFF;
+        width: calc(100% - 40px);
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+        font-size: 1.5rem;
+        outline: none;
+        -webkit-appearance: none;
+      }
+      button{
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        border:none;
+        background: #81776D;
+        color: #FFF;
+        font-size: 1.25rem;
+        padding: 8px 16px;
+        border-radius: 4px;
+        -webkit-appearance: none;
+        &:hover{
+          cursor: pointer;
+          background: darken(#81776D, 10%);
+        }
+      }
+    }
+  }
+  #app{
+    padding: 40px;
+    border: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    text-align: center;
+  }
+}

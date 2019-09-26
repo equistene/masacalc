@@ -12,6 +12,15 @@ function getFlour(){
   if(flour > 2000){
     console.log('¿Tanta masa vas a hacer?');
   }
+
+  var div = document.getElementById('app');
+
+  div.innerHTML += `
+  <p class="big">Si usas <strong> ${flour} grs</strong> de harina necesitas:</p>
+  <p><strong>${water}cc</strong> de agua</p>
+  <p><strong>${salt}grs</strong> de sal</p>
+  <p><strong>${yeast}grs</strong> de levadura</p>
+  `;
   
   console.log('Si usas ' + flour + 'grs de harina necesitas:');
   console.log('Agua: ' + water + 'cc de agua');
