@@ -71,11 +71,43 @@ main{
   }
   #app{
     .content{      
-      border: 4px;
+      border-radius: 4px;
       background: rgba(0, 0, 0, 0.2);
       color: #FFF;
       padding: 40px;
       text-align: center;
+      button{
+        display: block;
+        width: 60%;
+        margin: 40px auto 0;
+        border:none;
+        background: #81776D;
+        color: #FFF;
+        font-size: 1rem;
+        padding: 8px 16px;
+        border-radius: 4px;
+        -webkit-appearance: none;
+        &:hover{
+          cursor: pointer;
+          background: darken(#81776D, 10%);
+        }
+      }
     }    
+  }
+  .credits{
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #FFF;
+    font-size: 0.6rem;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    a{
+      color: #FFF;
+      text-decoration: underline;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
   }
 }

@@ -16,11 +16,13 @@ function getFlour(){
   var div = document.getElementById('app');
 
   div.innerHTML += `
-  <div class="content">
-  <p class="big">Si usas <strong> ${flour} grs</strong> de harina necesitas:</p>
-  <p><strong>${water}cc</strong> de agua</p>
-  <p><strong>${salt}grs</strong> de sal</p>
-  <p><strong>${yeast}grs</strong> de levadura</p>
+  <div class="content">  
+    <p class="big">Si usas <strong> ${flour} grs</strong> de harina necesitas:</p>
+    <p><strong>${water}cc</strong> de agua</p>
+    <p><strong>${salt}grs</strong> de sal</p>
+    <p><strong>${yeast}grs</strong> de levadura</p>
+
+    <button id="recalculate" onClick="window.location.reload();">Volver a calcular</button>
   </div>
   `;
   
