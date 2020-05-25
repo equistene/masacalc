@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-  <title>Calculador para masa de pizza y pan</title>
-  <meta name="Description" content="Calcula la cantidad de ingredientes necesarios para masa de pizza y pan" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <title>Calculador para masa de pan</title>
+    <meta
+      name="Description"
+      content="Calcula la cantidad de ingredientes necesarios para masa de pizza y pan"
+    />
 
-  <!-- Favicon -->
-  <!-- <link rel="manifest" href="./manifest.json" />
+    <!-- Favicon -->
+    <!-- <link rel="manifest" href="./manifest.json" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -15,51 +21,62 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff"> -->
 
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@equistene">
-  <meta name="twitter:title" content="Calculador de masa">
-  <meta name="twitter:description" content="Calcula la cantidad de ingredientes necesarios para masa de pizza y pan">
-  <meta name="twitter:creator" content="@equistene">        
-  <meta name="twitter:image:src" content="https://quecarne.cl/img/twitter-card.jpg">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@equistene" />
+    <meta name="twitter:title" content="Calculador de masa" />
+    <meta
+      name="twitter:description"
+      content="Calcula la cantidad de ingredientes necesarios para masa de pan"
+    />
+    <meta name="twitter:creator" content="@equistene" />
+    <meta
+      name="twitter:image:src"
+      content="https://quecarne.cl/img/twitter-card.jpg"
+    />
 
-  <!-- Open Graph data -->
-  <meta property="og:title" content="Calculador de masa" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://quecarne.cl/img/facebook-og.jpg" />
-  <meta property="og:image" content="/img/facebook-og.jpg" />
-  <meta property="og:description" content="Calcula la cantidad de ingredientes necesarios para masa de pizza y pan" />
-  <meta property="og:site_name" content="Calculador de masa" />        
-  <meta property="fb:admins" content="Número de ID de Facebook" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Calculador de masa" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/img/facebook-og.jpg" />
+    <meta
+      property="og:description"
+      content="Calcula la cantidad de ingredientes necesarios para masa de pan"
+    />
+    <meta property="og:site_name" content="Calculador de masa" />
+    <meta property="fb:admins" content="Número de ID de Facebook" />
 
-  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="top">
+        <h1>Calculadora de masa de pan</h1>
+      </section>
 
-  <main>
-  
-  <section class="top">
-    <h1>Calculadora de Masa <span>pan / pizza</span></h1>  
-  </section>
+      <div id="formDough">
+        <form>
+          <label for="text">¿Cuantos gramos de harina usarás?</label>
+          <input id="flour" type="number" placeholder="600" value="500" />
+          <button type="button" id="buttonDough" onclick="getFlour();">
+            Calcular
+          </button>
+        </form>
+      </div>
 
-  <div id="formDough">
-    <form>
-      <label for="text">¿Cuantos gramos de harina usarás?</label>
-      <input id="flour" type="number" placeholder="600">
-      <button type="button" id="buttonDough" onclick="getFlour();">Calcular</button>
-    </form>
-  </div>
+      <div id="app"></div>
 
-  <div id="app"></div>
+      <div class="credits">
+        Desarrollado por
+        <a href="https://www.xtn.cl" target="_blank">equistene</a>
+      </div>
+    </main>
 
-  <div class="credits">
-    Desarrollado por <a href="https://www.xtn.cl" target="_blank">equistene</a>
-  </div>
-
-  </main>
-
-  <script src="apps.js"></script>
-
-</body>
+    <script src="apps.js"></script>
+  </body>
 </html>
